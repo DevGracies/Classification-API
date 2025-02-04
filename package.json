@@ -1,0 +1,18 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "@channel\r Stage 1 Backend- Number Classification API\r Resources\r Fun fact API: http://numbersapi.com/#42\r https://en.wikipedia.org/wiki/Parity_(mathematics)\r Task Description\r Create an API that takes a number and returns interesting mathematical properties about it, along with a fun fact.\r Requirements\r Technology Stack:\r Use node express\r Must be deployed to a publicly accessible endpoint\r Must handle CORS (Cross-Origin Resource Sharing)\r Must return responses in JSON format\r Version Control:\r Code must be hosted on GitHub\r Repository must be public\r Must include a well-structured README.md\r API Specification\r Endpoint: GET** <your-domain.com>/api/classify-number?number=371\r Required JSON Response Format (200 OK):\r {\r     \"number\": 371,\r     \"is_prime\": false,\r     \"is_perfect\": false,\r     \"properties\": [\"armstrong\", \"odd\"],\r     \"digit_sum\": 11,  // sum of its digits\r     \"fun_fact\": \"371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371\" //gotten from the numbers API\r }\r Required JSON Response Format (400 Bad Request)\r {\r     \"number\": \"alphabet\",\r     \"error\": true\r }\r Acceptance Criteria\r Functionality\r Accepts GET requests with a number parameter.\r Returns JSON in the specified format.\r Accepts all valid integers as the only possible inputs\r Provides appropriate HTTP status codes.\r Code Quality\r Organized code structure.\r Basic error handling and input validation.\r Avoids hardcoded values.\r Documentation\r Complete README.\r Deployment\r Publicly accessible and stable API.\r Fast response time (< 500ms).\r Submission Mode:\r Submit your task through the designated submission form. Ensure you've:\r Hosted the API on a platform of your choice.\r Double-checked all requirements and acceptance criteria.\r Tested your API thoroughly before submission.\r Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.\r Then\r Go to the stage-one-backend channel\r Use the /task command and press Enter\r Follow the bot's instructions to complete grading\r Submission Deadline:\r The deadline for submissions is 6th February, 2025 11:59 PM WAT (GMT +1). Late submissions will not be entertained.\r Additional Note\r Use the math type from the Numbers API to get the fun fact.\r This task weighs 10 marks. An average mark is needed to proceed to the next stage.\r The possible combinations for the properties field:\r [\"armstrong\", \"odd\"] - if the number is both an Armstrong number and odd\r [\"armstrong\", “even”] - if the number is an Armstrong number and even\r [\"odd\"] - if the number is not an Armstrong number but is odd\r [”even”] - if the number is not an Armstrong number but is even\r :loudspeaker: Important Reminder\r Read, read, and read again! Ensure you fully understand the task requirements, API specifications, and acceptance criteria before starting. Double-check your work to ensure it meets all the guidelines and is free of errors.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
