@@ -54,7 +54,7 @@ Backend/
 ## ⚙️ Installation & Setup
 1. **Clone the repository:**
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/DevGracies/Classification-API.git
    cd Backend
    ```
 2. **Install dependencies:**
